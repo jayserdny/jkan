@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --progress --colors",
     "watch": "NODE_ENV=development webpack -d -w",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -37,6 +39,8 @@
     "js-yaml": "^3.5.5",
     "lodash": "^4.6.1",
     "notie": "github:timwis/notie#string-types",
-    "select2": "^4.0.2"
-  }
+    "select2": "^4.0.2",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
